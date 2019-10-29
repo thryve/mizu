@@ -7,6 +7,7 @@ The code doesn't look the best and there might be bugs,
 but I just wanted to whip this up because I was sick and tired
 of manually transfering customer data over.
 
+This will transfer ALL of the user's sample and sample_metrics.
 
 **BE SURE TO CREATE YOUR OWN ENV.SH**
 
@@ -24,7 +25,7 @@ source venv/bin/activate
 
 **Usage:**
 
-`python3 app.py [--email email] [--id id]`
+`python3 app.py [--email email] [--id user_id]`
 
 **Example:**
 
