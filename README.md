@@ -1,9 +1,9 @@
 usage:
-python3 app.py [--email email] [--id id]
+`python3 app.py [--email email] [--id id]`
 
 example:
-python3 app.py --email foobar@gmail.com
-python3 app.py --id 12345
+`python3 app.py --email foobar@gmail.com`
+`python3 app.py --id 12345`
 
 The point of this to easily transfer production data into local without the tedious
 importing and exporting of CSV's. Used for seeing a customer's data locally and in the
