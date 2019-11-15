@@ -5,7 +5,7 @@ event of a customer support ticket and they can't see a certain page for whateve
 
 The code doesn't look the best and there might be bugs,
 but I just wanted to whip this up because I was sick and tired
-of manually transfering customer data over.
+of manually transferring customer data over.
 
 This will transfer ALL of the user's sample and sample_metrics.
 
