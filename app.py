@@ -198,6 +198,8 @@ class LocalUser(db2.Model):
     # samples = db.relationship("Sample", backref="users", lazy="dynamic")
     diet = db.Column(MutableDict.as_mutable(postgresql.JSONB))
     lifestyle = db.Column(MutableDict.as_mutable(postgresql.JSONB))
+    role_id = db.Column(db.Integer, default=1)
+
 class LocalSample(db2.Model):
     __bind_key__ = 'local'
     __tablename__ = 'samples'
