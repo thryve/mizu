@@ -309,10 +309,9 @@ if __name__ == "__main__":
         print(f"[-] {email if email else id} doesn't exist in database.")
     else:
         user = db_user[0]
-        random_user_id = random.randrange(500,10000,1)
         new_user = LocalUser(
-            id = random_user_id,
-            username = f"user{random_user_id}",
+            id = user.id,
+            username = user.username,
             email = user.email,
             password = hash_password(GENERIC_PASSWORD),
             first_name = user.first_name,
