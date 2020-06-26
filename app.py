@@ -311,7 +311,7 @@ if __name__ == "__main__":
         user = db_user[0]
         new_user = LocalUser(
             id = user.id,
-            username = user.username,
+            username = f"user{user.id}",
             email = user.email,
             password = hash_password(GENERIC_PASSWORD),
             first_name = user.first_name,
