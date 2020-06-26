@@ -318,7 +318,7 @@ if __name__ == "__main__":
             last_name = user.last_name,
             visible_to='any_one')
 
-        print(f"[+] Adding {user.email} to users with id: {random_user_id}")
+        print(f"[+] Adding {user.email} to users with id: {user.id}")
         db.session.add(new_user)
         db.session.commit()
 
@@ -329,7 +329,7 @@ if __name__ == "__main__":
 
                 new_sample = LocalSample(
                     id=sample.id,
-                    user_id=random_user_id,
+                    user_id=user.id,
                     status=sample.status,
                     registered_at=sample.registered_at,
                     last_updated_at=sample.last_updated_at,
