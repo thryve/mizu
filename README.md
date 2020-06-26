@@ -9,6 +9,20 @@ of manually transferring customer data over.
 
 This will transfer ALL of the user's sample and sample_metrics.
 
+To setup:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`git clone git@github.com:thryve/mizu.git`
+
+Create virtualenv
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`python3 -m venv venv`
+
+Install all requirements:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`pip install -r requirements.txt`
+
+
+
 **BE SURE TO CREATE YOUR OWN ENV.SH**
 
 What the env.sh should look like:
@@ -20,8 +34,9 @@ export LOCAL_DB=[LOCAL POSTGRESURL]
 export GENERIC_PASSWORD=foobar 
 source venv/bin/activate
 ```
+Instantiate all environment variables and start virtual environment
 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`source env.sh`
 
 **Usage:**
 
